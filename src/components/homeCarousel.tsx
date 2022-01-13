@@ -1,6 +1,10 @@
 import React, { FunctionComponent } from 'react'
 import { Carousel } from 'react-bootstrap'
 
+/**
+ * HOME CAROUSEL
+ * That display some random images
+ */
 const HomeCarousel:FunctionComponent = () => (
   <Carousel>
     {Array(5).fill(null).map((_, index) => (

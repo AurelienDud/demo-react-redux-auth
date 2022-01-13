@@ -10,6 +10,7 @@ import { Link } from "react-router-dom"
 
 /**
  * HEADER NAV LINK
+ * To use ReactRouterDom Link instead of Bootstrap native html tag 
  */
 const CustomNavLink:FunctionComponent<ICustomNavLink> = ({ to = '/', children }) => (
   <div className="nav-item">

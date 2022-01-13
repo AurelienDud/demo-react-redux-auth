@@ -43,5 +43,8 @@ export const authReducer = createSlice({
   },
 })
 
+/**
+ * Export actions and the reducer
+ */
 export const { login_success, login_failure, logout_success } = authReducer.actions
 export default authReducer.reducer

@@ -1,11 +1,17 @@
 import React, { FunctionComponent } from 'react'
 import { Modal, Button, Form } from 'react-bootstrap'
 
+/**
+ * TYPES
+ */
 interface IForgottenPasswordModal {
   isOpen?: boolean,
   handleClose?: () => void
 }
 
+/**
+ * FORGOTTEN PASSWORD MODAL
+ */
 const ForgottenPasswordModal:FunctionComponent<IForgottenPasswordModal> = ({ isOpen = false, handleClose }) => (
   <Modal show={isOpen} onHide={handleClose}>
     <Modal.Header closeButton>
