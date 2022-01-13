@@ -11,7 +11,7 @@ interface IWithAuthProps<P> {
   redirectTo?: string,
   reverse?: boolean
 }
-interface IWithAuth<P = {}> {
+interface IWithAuth<P = Record<string, never>> {
   (props:IWithAuthProps<P>): React.ReactElement
 }
 

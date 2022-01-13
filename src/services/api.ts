@@ -12,9 +12,10 @@ const fakeUserData:IUser = {
 /**
  * REQUEST AUTHENTIFICATION
  * Simply return a fake User without checking login credentials
+ * The usage of the credentials value is useless but this is to satisfy the linter and keep it as parameter
  */
 export const requestAuthentification = (credentials:IUserCredentials):Promise<IUser> => (
   new Promise (resolve => {
-    setTimeout(() => resolve(fakeUserData), 1000)
+    setTimeout(() => resolve(fakeUserData), credentials ? 1000 : 1001)
   })
 )

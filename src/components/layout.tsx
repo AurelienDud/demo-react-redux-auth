@@ -1,4 +1,4 @@
-import { FunctionComponent } from "react"
+import React, { FunctionComponent } from "react"
 import { Outlet } from "react-router-dom";
 import Header from '@src/components/header'
 import Footer from '@src/components/footer'

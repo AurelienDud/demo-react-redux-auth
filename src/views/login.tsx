@@ -1,4 +1,4 @@
-import { FunctionComponent, useState, useEffect } from 'react'
+import React, { FunctionComponent, useState, useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { Container, Button, Card, Form, Spinner } from 'react-bootstrap'
 import { loginAction } from '@src/actions/authActions'
@@ -23,9 +23,9 @@ const LoginView:FunctionComponent = () => {
     setOnLoad(true)
 
     // get form data
-    let formData = new FormData(event.currentTarget)
-    let username = formData.get("username") as string
-    let password = formData.get("password") as string
+    const formData = new FormData(event.currentTarget)
+    const username = formData.get("username") as string
+    const password = formData.get("password") as string
 
     // dispatch login request
     dispatch(loginAction({ username, password }))
@@ -65,7 +65,7 @@ const LoginView:FunctionComponent = () => {
             {/* USERNAME INPUT */}
             <Form.Group className="mb-3" controlId="formBasicEmail">
               <Form.Label>
-                Nom d'utilisateur
+                {`Nom d'utilisateur`} 
               </Form.Label>
               <Form.Control 
                 type="text" 

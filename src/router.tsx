@@ -1,4 +1,4 @@
-import { FunctionComponent } from 'react'
+import React, { FunctionComponent } from 'react'
 import { Routes, Route } from "react-router-dom";
 import { withAuth } from '@src/services/authHOC'
 import Layout from '@src/components/layout'

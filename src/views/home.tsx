@@ -1,4 +1,4 @@
-import { FunctionComponent } from 'react'
+import React, { FunctionComponent } from 'react'
 import { Container } from 'react-bootstrap'
 import HomeCarousel from '@src/components/homeCarousel'
 

@@ -1,6 +1,6 @@
-import { FunctionComponent } from 'react'
+import React, { FunctionComponent } from 'react'
 import { useSelector } from 'react-redux'
-import { Container, Row, Col, Image, Spinner } from 'react-bootstrap'
+import { Container, Row, Col, Image } from 'react-bootstrap'
 
 const AccountView:FunctionComponent = () => {
   const user = useSelector<IAuthState, IUser|undefined>(state => state.user)

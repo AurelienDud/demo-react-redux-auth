@@ -1,4 +1,4 @@
-import { FunctionComponent } from "react"
+import React, { FunctionComponent } from "react"
 import { useNavigate, Link } from "react-router-dom"
 import { useSelector, useDispatch } from 'react-redux'
 import { Navbar, Nav, Container, Button } from 'react-bootstrap'

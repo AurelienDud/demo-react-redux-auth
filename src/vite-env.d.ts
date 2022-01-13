@@ -1,19 +1,5 @@
 /// <reference types="vite/client" />
 
-declare interface ILocationState {
-  from?: { 
-    pathname: string 
-  }
-}
-
-/**
- * Generic redux action interface 
- */
- declare interface IAction<P = any> { 
-  type: string, 
-  payload: Record<string, P>
-}
-
 /**
  * Redux authentification state interface
  */
