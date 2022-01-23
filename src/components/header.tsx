@@ -2,7 +2,7 @@ import React, { FunctionComponent } from "react"
 import { useNavigate, Link } from "react-router-dom"
 import { useSelector, useDispatch } from 'react-redux'
 import { Navbar, Nav, Container, Button } from 'react-bootstrap'
-import { logoutAction } from '@src/actions/authActions'
+import { userLogout } from '@src/actions/userActions'
 import CustomNavLink from '@src/components/customNavLink'
 import image from '@src/assets/images/favicon.svg'
 
@@ -14,7 +14,7 @@ const LogoutButton:FunctionComponent = () => {
   const dispatch = useDispatch()
 
   const handleClick = () => {
-    dispatch(logoutAction())
+    dispatch(userLogout())
     navigate("/")
   } 
 

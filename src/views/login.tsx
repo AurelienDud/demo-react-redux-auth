@@ -1,7 +1,7 @@
 import React, { FunctionComponent, useState, useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { Container, Button, Card, Form, Spinner } from 'react-bootstrap'
-import { loginAction } from '@src/actions/authActions'
+import { userLogin } from '@src/actions/userActions'
 import ForgottenPasswordModal from '@src/components/forgottenPasswordModal'
 
 /**
@@ -28,7 +28,7 @@ const LoginView:FunctionComponent = () => {
     const password = formData.get("password") as string
 
     // dispatch login request
-    dispatch(loginAction({ username, password }))
+    dispatch(userLogin({ username, password }))
   }
 
   /**

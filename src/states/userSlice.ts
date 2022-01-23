@@ -24,8 +24,8 @@ const initialState:IAuthState = {
 /**
  * AUTH REDUCER
  */
-export const authReducer = createSlice({
-  name: 'auth',
+const userSlice = createSlice({
+  name: 'user',
   initialState: initialState,
   reducers: {
     login_success: (state, actions:PayloadAction<ILoginPayload>) => {
@@ -46,5 +46,4 @@ export const authReducer = createSlice({
 /**
  * Export actions and the reducer
  */
-export const { login_success, login_failure, logout_success } = authReducer.actions
-export default authReducer.reducer
+export default userSlice

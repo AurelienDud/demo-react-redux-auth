@@ -1,10 +1,22 @@
 import { createStore, applyMiddleware } from "redux";
 import thunk from 'redux-thunk';
-import authReducer from '@src/states/authSlice'
+import userSlice from '@src/states/userSlice'
 
+/**
+ * Store
+ */
 const store = createStore(
-  authReducer,
+  userSlice.reducer,
+  undefined,
   applyMiddleware( thunk )
 )
+
+
+/**
+ * Exports
+ */
+export const actions = {
+  user: userSlice.actions
+}
 
 export default store

@@ -8,14 +8,12 @@ interface IErrorView {
 /**
  * ERROR VIEW
  */
-const ErrorView:FunctionComponent<IErrorView> = ({ code = '404' }) => {
-  return (
-    <Container className="my-4">
-      <Alert variant='warning'>
-        {code === 404 ? 'Nothing by there...' : 'Something happened!'}
-      </Alert>
-    </Container>
-  )
-}
+const ErrorView:FunctionComponent<IErrorView> = ({ code = '404' }) => (
+  <Container className="my-4">
+    <Alert variant='warning'>
+      {code === 404 ? 'Nothing by there...' : 'Something happened!'}
+    </Alert>
+  </Container>
+)
 
 export default ErrorView

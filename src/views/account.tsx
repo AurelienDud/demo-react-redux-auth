@@ -7,6 +7,8 @@ const AccountView:FunctionComponent = () => {
 
   if (!user) return <></>
 
+  // localStorage.clear()
+
   return (
     <Container className="my-4">
       <h1 className='h3 text-sedondary mb-4'>
